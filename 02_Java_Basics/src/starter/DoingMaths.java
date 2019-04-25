@@ -53,7 +53,7 @@ public class DoingMaths {
 		d3 = (a + b) * c / 2;
 		d4 = (a + b) * (c / 2);
 		//System.out.println("\n8. Values: " + d1 + " : " + d2 + " : " + d3
-		//		+ " : " + d4);
+		//+ " : " + d4);
 		
 		// Type your answer here--> 
 
@@ -63,7 +63,7 @@ public class DoingMaths {
 		q = 10;
 		p += q++;
 		// Decide what the next line will print
-		//System.out.println("\n9. Result is: " + (p + q)); // Answer-->
+		System.out.println("\n9. Result is: " + (p + q)); // Answer-->
 
 		// Task 10
 		// Make the following statement compile
