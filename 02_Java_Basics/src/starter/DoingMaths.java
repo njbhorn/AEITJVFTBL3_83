@@ -52,6 +52,7 @@ public class DoingMaths {
 		d2 = (a + b * c) / 2;
 		d3 = (a + b) * c / 2;
 		d4 = (a + b) * (c / 2);
+		// added comment
 		//System.out.println("\n8. Values: " + d1 + " : " + d2 + " : " + d3
 		//+ " : " + d4);
 		
