@@ -32,15 +32,15 @@ public class StringPractice {
 		System.out.println(fullname);
 
 		StringBuilder sb = new StringBuilder("Bruce SpringSteen ");
-		// sb.append("is the artist ever");
-		// sb.insert(25, "greatest ");
-		// sb.replace(34, 40, "rock singer" );
-		// System.out.println(sb.toString());
+		 sb.append("is the artist ever");
+		 sb.insert(25, "greatest ");
+		 sb.replace(34, 40, "rock singer" );
+		 System.out.println(sb.toString());
 
 		System.out.println(sb.append("is the artist ever")
 				.insert(25, "greatest ").replace(34, 40, "rock singer")
 				.toString());
-
+		System.out.println(sb);
 	}
 
 }
