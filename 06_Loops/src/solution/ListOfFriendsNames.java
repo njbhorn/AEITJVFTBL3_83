@@ -8,7 +8,8 @@ public class ListOfFriendsNames {
 		
         String name= getNextName();
 
-        while (name.toUpperCase() != "Q"){
+//        while (name.toUpperCase() != "Q"){
+        while (!name.toUpperCase().equals("Q")){
             storeName(name);
             name = getNextName();
         }
@@ -20,7 +21,7 @@ public class ListOfFriendsNames {
      */
     private static String getNextName(){
     	Scanner scanner = new Scanner(System.in);
-        System.out.printf("Enter %s friend's name or type 'Q' to quit", isFirstName ? "a":"another");
+        System.out.printf("Enter %s friend's name or type 'Q' to quit\t", isFirstName ? "a":"another");
         String s = scanner.next();
         if (s.contains(",")){
             System.out.println("Can't have a comma in a friends name");
