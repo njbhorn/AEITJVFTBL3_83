@@ -44,7 +44,7 @@ public class NumberFinder {
     // search for an int in an int[] returning its position in the array if it is there, else -1 if it is not 
     public static int NumberSearch(int[] numbers, int numToFind)
     {
-        for (int i = 0; i < numbers.length; i++)
+    	for (int i = 0; i < numbers.length; i++)
         {
             if (numbers[i] == numToFind)
             {

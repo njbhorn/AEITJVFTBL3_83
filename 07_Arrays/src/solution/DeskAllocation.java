@@ -95,8 +95,7 @@ public class DeskAllocation {
 					break;
 				}
 			} // end of a row
-			if (deskAssigned) 
-				break;
+			if (deskAssigned) break;
 		}   // end of all rows
 		if (!deskAssigned) {
 			System.out.printf("No desk found for %s\n", name);

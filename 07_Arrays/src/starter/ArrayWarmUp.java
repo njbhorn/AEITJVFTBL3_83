@@ -7,7 +7,7 @@ public class ArrayWarmUp {
 //
 //        practicingForEachLoops();
 //
-//        indexingIntoAnArray();
+        indexingIntoAnArray();
 //
 //        passingAnArraytoAmethod();
 
@@ -16,41 +16,41 @@ public class ArrayWarmUp {
     {
         System.out.println("\n\n** Basic Array Usage **");
         // Task 1 - one of these 2 statements is valid, one is not. Uncomment the correct one
-        //int[] ages;
-        //int[4] ages;
+        int[] ages;
+//        int[4] ages;
 
         // Task 2 - one of these 2 statements is valid, one is not. Uncomment the correct one
         //ages = new int[];
-        //ages = new int[4];
+        ages = new int[4];
 
         // Task 3 - here are some statements, uncomment any that you think WOULD compile.
-        //String[] names1 = new String[3] { "", "", "" };
-        //String[] names2 = new String[3] { "Sue", "Graham", "Zach" };
-        //String[] names3 = new String[3] { "Sue", "Graham" };
-        //String[] names4 = { };
-        //String[] names5 = { "Dave Dee", "Dozy", "Beaky", "Mick", "Titch" };
-        //String[] names6 = { "Zach", "Zoe", 'Z' };
-        //int[] values = {names1.length, names2.length + names4.length };
-        //double[] dubs = {12, 34, 56, 5.78};
-        //int[] pets = new int[dubs.length];
+//        String[] names1 = new String[3] { "", "", "" };
+//        String[] names2 = new String[3] { "Sue", "Graham", "Zach" };
+//        String[] names3 = new String[3] { "Sue", "Graham" };
+        String[] names4 = { };
+        String[] names5 = { "Dave Dee", "Dozy", "Beaky", "Mick", "Titch" };
+//        String[] names6 = { "Zach", "Zoe", 'Z' };
+//        int[] values = {names1.length, names2.length + names4.length };
+        double[] dubs = {12, 34, 56, 5.78};
+        int[] pets = new int[dubs.length];
 
         // Task 4 - uncomment any of the following statements that you think would compile
         // after you have tried this you might like to view an answer/comment at very bottom of file
         int[] numbers = { 3, 6, 8, 12 };
-        //System.out.println(numbers[3]);
-        //System.out.println(numbers[4]);
-        //System.out.println(numbers[-56]); 
-        //System.out.println(numbers[numbers.Length]);
-        //System.out.println(numbers[numbers.Length - 1]);
-        //System.out.println(numbers[numbers.Length] - 1);
-        //System.out.println(numbers);
+        System.out.println(numbers[3]);
+        System.out.println(numbers[4]);
+        System.out.println(numbers[-56]); 
+        System.out.println(numbers[numbers.length]);
+        System.out.println(numbers[numbers.length - 1]);
+        System.out.println(numbers[numbers.length] - 1);
+        System.out.println(numbers);
         
 
         // Task 5 - one of the following loops makes sense but which one?
         int[] numSiblings = { 0, 2, 4, 3, 1 };
-        //for (int i = 0; i <= numSiblings.Length; i++) { System.out.println(numSiblings[i]); }
-        //for (int i = 0; i < numSiblings.Length; i++) { System.out.println(numSiblings[i]); }
-        //for (int i = 0; i == numSiblings.Length; i++) { System.out.println(numSiblings[i]); }
+        //for (int i = 0; i <= numSiblings.length; i++) { System.out.println(numSiblings[i]); }
+        //for (int i = 0; i < numSiblings.length; i++) { System.out.println(numSiblings[i]); }
+        //for (int i = 0; i == numSiblings.length; i++) { System.out.println(numSiblings[i]); }
     }     
 
     private static void practicingForEachLoops()
@@ -63,7 +63,15 @@ public class ArrayWarmUp {
 
         // ONLY TASK
         // Display the contents of these 3 arrays (separately) by using 3 foreach loops
-        
+        for ( String name : names ) {
+        	System.out.println(name);
+        }
+        for ( int age : ages ) {
+        	System.out.println(age);
+        }
+        for ( double salary : salaries ) {
+        	System.out.println(salary);
+        }
        
     }
 
@@ -92,7 +100,11 @@ public class ArrayWarmUp {
         // "Tiger would like another major championship"
         // "Teresa would like a deal with Europe"
         // "Steve would like to hear Jackie in concert"
-
+        for ( int i = 0 , j = names.length - 1 
+        	; i < names.length 
+        	; i++, j-- ) {
+        	System.out.printf ( "%s would like %s\n", names[i] , thingsTheyWouldLike[j]);
+        }
 
 
     }
@@ -100,7 +112,8 @@ public class ArrayWarmUp {
     private static void passingAnArraytoAmethod()
     {
         // Simply do whatever is necessary to compile a call to the method below this one
-        
+    	int[] demo = { 1,2,3 } ;
+        needAnArray(demo);
     }
     private static void needAnArray(int[] ages)
     {
