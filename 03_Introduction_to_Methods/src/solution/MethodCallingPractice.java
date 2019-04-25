@@ -55,7 +55,6 @@ public class MethodCallingPractice {
 		// one method returns true/false, think of an appropriate display
 
 		alice();
-
 		beatrice(12);
 
 		i = 23;
@@ -82,7 +81,7 @@ public class MethodCallingPractice {
 		s = georgina('Z', s);
 		System.out.println(s);
 		
-		//whenYouHaveTime();
+		whenYouHaveTime();
 
 	}
 

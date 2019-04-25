@@ -27,13 +27,13 @@ public class TheLunchQueue {
 		System.out.printf("Hello, your lunch is %s with %s roast potatoes and %s brussel sprouts",
 						mainCourse, roastCount, brusselCount);
 		System.out.println();
-//		int numberQuarters = (roastCount + 1) * 4;
-//		numberQuarters -= brusselCount;
-//		numberQuarters = Math.max(numberQuarters, 0);
-//		System.out.printf("After gaining one more potato, you will have %s roast quarters left over",
-//						numberQuarters);
+		int numberQuarters = (roastCount + 1) * 4;
+		numberQuarters -= brusselCount;
+		numberQuarters = Math.max(numberQuarters, 0);
 		System.out.printf("After gaining one more potato, you will have %s roast quarters left over",
-				Math.max((roastCount + 1) * 4 - brusselCount, 0));
+						numberQuarters);
+//		System.out.printf("After gaining one more potato, you will have %s roast quarters left over",
+//				Math.max((roastCount + 1) * 4 - brusselCount, 0));
 	}
 
 	private static int getInteger(String message, Scanner s) {
