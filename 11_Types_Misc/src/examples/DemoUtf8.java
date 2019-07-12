@@ -16,8 +16,19 @@ public class DemoUtf8 {
 			        		 			, StandardCharsets.UTF_8) ;
 			for (int i = 0; i <= 65535; i++) {
 				char unicode = (char) i;
-				writer.append(unicode);
-				writer.append('\n');
+				
+				String toWrite = String.format("%d\t%4s\t%s\n"
+						, i
+						, Integer.toHexString(i)
+						, unicode
+						);
+//				String toWrite = i + "\t" + Integer.toHexString(i) 
+//									+ "\t" + unicode + "\n" ;
+//				writer.append(i);
+//				writer.append('\t') ;
+//				writer.append(unicode);
+//				writer.append('\n');
+				writer.write(toWrite);
 			}
 		} catch ( IOException e) {
 			// TODO Auto-generated catch block
